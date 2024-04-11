@@ -7,7 +7,7 @@ if allof (environment :matches "vnd.proton.spam-threshold" "*", spamtest :value 
 }
 
 # This is the folder that matching messages should be filtered into.
-set "folder" "Bulk";
+set "folder" "Filtered out";
 
 if allof (header :comparator "i;unicode-casemap" :contains "Subject" ["update", "updating", "change", "changing"], header :comparator "i;unicode-casemap" :contains "Subject" ["policy", "policies", "terms", "user agreement", "legal agreement", "privacy notice", "privacy statement"]) {
   fileinto "${folder}";

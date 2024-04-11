@@ -7,4 +7,5 @@ attempts from lawyers to tell you that _something changed_ will still get
 through, and there may be some false positives. However, the filter will also be
 improved over time.
 
-You may need to create a folder named _Bulk_ before this filter will work.
+You may need to create a folder named _Filtered out_ before this filter will
+work.
