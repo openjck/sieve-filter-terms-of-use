@@ -1,4 +1,4 @@
-I don't care about your Terms of Use.
+I don't care about your _Terms of Use_.
 
 This is a [Sieve](https://proton.me/support/sieve-advanced-custom-filters)
 filter which can be used to get rid of emails about terms of use, privacy
