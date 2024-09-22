@@ -44,7 +44,7 @@ if allof (
 # Filter messages based on a single term appearing in the subject.
 if allof (
   header :comparator "i;unicode-casemap" :contains "Subject" [
-    "Consumer Privacy Notice"
+    "Privacy Notice"
   ]
 ) {
   fileinto "${folder}";
