@@ -26,7 +26,8 @@ if allof (
     "update",
     "updating",
     "change",
-    "changing"
+    "changing",
+    "review"
   ],
   header :comparator "i;unicode-casemap" :contains "Subject" [
     "policy",
@@ -36,7 +37,8 @@ if allof (
     "legal agreement",
     "privacy notice",
     "privacy statement",
-    "subscriber agreement"
+    "subscriber agreement",
+    "Terms of Use"
   ]
 ) {
   fileinto "${folder}";
