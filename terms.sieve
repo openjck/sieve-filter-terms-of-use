@@ -38,7 +38,8 @@ if allof (
     "privacy notice",
     "privacy statement",
     "subscriber agreement",
-    "Terms of Use"
+    "Terms of Use",
+    "privacy updates"
   ]
 ) {
   fileinto "${folder}";
