@@ -27,7 +27,8 @@ if allof (
     "updating",
     "change",
     "changing",
-    "review"
+    "review",
+    "new"
   ],
   header :comparator "i;unicode-casemap" :contains "Subject" [
     "policy",
