@@ -20,7 +20,7 @@ if allof (
 # This is the folder that matching messages should be moved to.
 set "folder" "Filtered out";
 
-# Filter messages based on two sets of terms appearing in the subject.
+# Filter messages based on sets of terms appearing in the subject.
 if allof (
   header :comparator "i;unicode-casemap" :contains "Subject" [
     "update",
@@ -30,6 +30,7 @@ if allof (
     "review",
     "new"
   ],
+
   header :comparator "i;unicode-casemap" :contains "Subject" [
     "policy",
     "policies",
@@ -41,6 +42,11 @@ if allof (
     "subscriber agreement",
     "Terms of Use",
     "privacy updates"
+  ],
+
+  # Allow some terms that would otherwise be caught by one of the above filters.
+  not header :comparator "i;unicode-casemap" :contains "Subject" [
+    "renew"
   ]
 ) {
   fileinto "${folder}";
