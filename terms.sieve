@@ -41,7 +41,8 @@ if allof (
     "privacy statement",
     "subscriber agreement",
     "Terms of Use",
-    "privacy updates"
+    "privacy updates",
+    "account agreement"
   ],
 
   # Allow some terms that would otherwise be caught by one of the above filters.
